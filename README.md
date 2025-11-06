@@ -219,10 +219,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 - 🎓 3rd Year CSSE @ KIIT University
 - 👨‍💻 Intern | Data Science & ML
-- 📧 Email: kumarAryan Gupta818@gmail.com
-- 💼 LinkedIn: [Aryan Gupta-kumar-dev-97b820313](https://www.linkedin.com/in/Aryan Gupta-kumar-dev-97b820313)
-- 🐙 GitHub: [@Aryan Guptakumardev](https://github.com/Aryan Guptakumardev)
-- 🌐 Portfolio: [Aryan Guptakumardev.github.io/Aryan Gupta-portfolio](https://Aryan Guptakumardev.github.io/Aryan Gupta-portfolio/)
+- 🐙 GitHub: https://github.com/ravan23gif
 
 ## 🌟 Acknowledgments
 
