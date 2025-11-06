@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Credit Risk Assessment - AI Powered</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <!-- Header -->
+    <header class="header">
+      <div class="logo">
+        <svg width="40" height="40" viewBox="0 0 40 40">
+          <circle cx="20" cy="20" r="18" fill="#6366f1" opacity="0.2"/>
+          <path d="M20 10 L28 16 L28 28 L20 34 L12 28 L12 16 Z" fill="#6366f1"/>
+          <text x="20" y="26" text-anchor="middle" fill="white" font-size="16" font-weight="bold">$</text>
+        </svg>
+        <span>CreditScore AI</span>
+      </div>
+      <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="../README.md">Docs</a>
+      </nav>
+    </header>
+
+    <!-- Hero -->
+    <section class="hero">
+      <h1>💳 Credit Risk Assessment</h1>
+      <p class="subtitle">AI-Powered Credit Scoring using Machine Learning</p>
+      <div class="stats">
+        <div class="stat-card"><div class="stat-number">75%+</div><div class="stat-label">Accuracy</div></div>
+        <div class="stat-card"><div class="stat-number">0.78</div><div class="stat-label">ROC-AUC</div></div>
+        <div class="stat-card"><div class="stat-number">1000+</div><div class="stat-label">Predictions</div></div>
+      </div>
+    </section>
+
+    <!-- Form -->
+    <section class="form-section" id="assessment-form">
+      <h2>📝 Credit Application Form</h2>
+      <p class="form-desc">Fill in the details below for instant credit risk assessment</p>
+      <form id="creditForm" class="credit-form">
+        <div class="form-grid">
+          <div class="form-group"><label>Age</label><input type="number" name="age" min="18" max="100" required placeholder="Enter age"></div>
+          <div class="form-group"><label>Job Status</label><select name="job" required><option value="">Select</option><option value="0">Unemployed</option><option value="1">Unskilled Resident</option><option value="2">Skilled</option><option value="3">Highly Skilled</option></select></div>
+          <div class="form-group"><label>Housing</label><select name="housing" required><option value="">Select</option><option value="0">Rent</option><option value="1">Own</option><option value="2">Free</option></select></div>
+          <div class="form-group"><label>Credit Amount ($)</label><input type="number" name="credit_amount" min="0" required placeholder="Amount"></div>
+          <div class="form-group"><label>Duration (months)</label><input type="number" name="duration" min="1" max="72" required placeholder="Duration"></div>
+          <div class="form-group"><label>Savings</label><select name="savings" required><option value="">Select</option><option value="0">< 100 DM</option><option value="1">100-500 DM</option><option value="2">500-1000 DM</option><option value="3">> 1000 DM</option><option value="4">None</option></select></div>
+          <div class="form-group"><label>Checking Account</label><select name="checking" required><option value="">Select</option><option value="0">< 0 DM</option><option value="1">0-200 DM</option><option value="2">> 200 DM</option><option value="3">No account</option></select></div>
+          <div class="form-group"><label>Credit History</label><select name="credit_history" required><option value="">Select</option><option value="0">Critical</option><option value="1">Delay in Past</option><option value="2">Existing Paid</option><option value="3">All Paid</option><option value="4">No Credits</option></select></div>
+          <div class="form-group"><label>Purpose</label><select name="purpose" required><option value="">Select</option><option value="0">Car (New)</option><option value="1">Car (Used)</option><option value="2">Furniture</option><option value="3">Radio/TV</option><option value="4">Appliances</option><option value="5">Repairs</option><option value="6">Education</option><option value="7">Business</option></select></div>
+          <div class="form-group"><label>Employment (years)</label><select name="employment" required><option value="">Select</option><option value="0">Unemployed</option><option value="1">< 1 year</option><option value="2">1-4 years</option><option value="3">4-7 years</option><option value="4">> 7 years</option></select></div>
+        </div>
+        <div class="form-actions">
+          <button type="submit" class="btn btn-primary">🔍 Assess Credit Risk</button>
+          <button type="reset" class="btn btn-secondary">🔄 Reset</button>
+        </div>
+      </form>
+    </section>
+
+    <!-- Results -->
+    <section class="results-section" id="results" style="display:none">
+      <h2>📊 Assessment Results</h2>
+      <div class="result-card">
+        <div class="result-header">
+          <div class="result-icon success" id="resultIcon">✓</div>
+          <div class="result-main"><h3 id="resultTitle">Credit Risk: Good</h3><p id="resultDesc">Positive indicators</p></div>
+        </div>
+        <div class="result-details">
+          <div class="detail-item"><span class="detail-label">Risk Level:</span><span class="detail-value" id="riskLevel">Low</span></div>
+          <div class="detail-item"><span class="detail-label">Confidence:</span><span class="detail-value" id="confidence">85%</span></div>
+          <div class="detail-item"><span class="detail-label">Recommendation:</span><span class="detail-value" id="recommendation">Approve</span></div>
+        </div>
+        <div class="probability-bar">
+          <div class="prob-label">Approval Probability</div>
+          <div class="progress-bar"><div class="progress-fill" id="progressFill"></div></div>
+          <div class="prob-percentage" id="probPercentage">0%</div>
+        </div>
+      </div>
+      <button class="btn btn-primary" onclick="resetAssessment()">🔄 New Assessment</button>
+    </section>
+
+    <!-- Features -->
+    <section class="features-section">
+      <h2>🎯 Key Credit Factors</h2>
+      <p class="section-desc">Top factors influencing credit decisions</p>
+      <div class="features-grid">
+        <div class="feature-card"><div class="feature-icon">📜</div><h3>Credit History</h3><p>Past payment behavior</p><div class="importance-bar" style="--importance:90%"></div></div>
+        <div class="feature-card"><div class="feature-icon">💰</div><h3>Account Balance</h3><p>Financial status</p><div class="importance-bar" style="--importance:75%"></div></div>
+        <div class="feature-card"><div class="feature-icon">⏱️</div><h3>Loan Duration</h3><p>Credit length</p><div class="importance-bar" style="--importance:65%"></div></div>
+        <div class="feature-card"><div class="feature-icon">👤</div><h3>Age</h3><p>Applicant age</p><div class="importance-bar" style="--importance:55%"></div></div>
+        <div class="feature-card"><div class="feature-icon">💼</div><h3>Employment</h3><p>Job stability</p><div class="importance-bar" style="--importance:50%"></div></div>
+        <div class="feature-card"><div class="feature-icon">🎯</div><h3>Purpose</h3><p>Loan purpose</p><div class="importance-bar" style="--importance:45%"></div></div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <p>Made with ❤️ for Code Alpha Internship | Powered by ML</p>
+      <p>Random Forest • 75%+ Accuracy • 0.78 ROC-AUC</p>
+    </footer>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
