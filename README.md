@@ -1,12 +1,12 @@
-# 💳 CodeAlpha Credit Scoring Model
+# 💳 Credit Scoring Model
 
-[![Build Status](https://img.shields.io/badge/build-passing-brightgreen)](https://github.com/bhanukumardev/CodeAlpha_CreditScoringModel) [![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE) [![Python](https://img.shields.io/badge/Python-3776AB?logo=python&logoColor=white)](https://www.python.org/) [![Scikit-learn](https://img.shields.io/badge/Scikit--learn-F7931E?logo=scikit-learn&logoColor=white)](https://scikit-learn.org/) [![HTML](https://img.shields.io/badge/HTML-E34F26?logo=html5&logoColor=white)](https://html.spec.whatwg.org/) [![Stars](https://img.shields.io/github/stars/bhanukumardev/CodeAlpha_CreditScoringModel?style=social)](https://github.com/bhanukumardev/CodeAlpha_CreditScoringModel/stargazers)
+[![Build Status](https://img.shields.io/badge/build-passing-brightgreen)](https://github.com/Aryan Guptakumardev/CreditScoringModel) [![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE) [![Python](https://img.shields.io/badge/Python-3776AB?logo=python&logoColor=white)](https://www.python.org/) [![Scikit-learn](https://img.shields.io/badge/Scikit--learn-F7931E?logo=scikit-learn&logoColor=white)](https://scikit-learn.org/) [![HTML](https://img.shields.io/badge/HTML-E34F26?logo=html5&logoColor=white)](https://html.spec.whatwg.org/) [![Stars](https://img.shields.io/github/stars/Aryan Guptakumardev/CreditScoringModel?style=social)](https://github.com/Aryan Guptakumardev/CreditScoringModel/stargazers)
 
-> Credit Scoring Model project for Code Alpha Internship — ML-powered credit risk assessment using German Credit Data.
+> Credit Scoring Model project for Internship — ML-powered credit risk assessment using German Credit Data.
 
 ## 📹 Demo
 
-**[📊 View LinkedIn Post →](https://www.linkedin.com/posts/bhanu-kumar-dev-97b820313_machinelearning-creditscoring-datascience-activity-7335941965395492865-vW-f?utm_source=share&utm_medium=member_desktop&rcm=ACoAAE-td28BKSK7mi1hQgrYDtXPTq_qe8XRr18)**
+**[📊 View LinkedIn Post →](https://www.linkedin.com/posts/Aryan Gupta-kumar-dev-97b820313_machinelearning-creditscoring-datascience-activity-7335941965395492865-vW-f?utm_source=share&utm_medium=member_desktop&rcm=ACoAAE-td28BKSK7mi1hQgrYDtXPTq_qe8XRr18)**
 
 ## 🚀 Overview
 
@@ -17,7 +17,7 @@ A comprehensive credit risk prediction system built using **machine learning** a
 - **Model Evaluation** - Precision, Recall, F1-score, ROC-AUC metrics
 - **Interpretability** - Feature importance visualization
 
-Built as part of **Code Alpha Data Science Internship**.
+Built as part of **Data Science Internship**.
 
 ## ✨ Features
 
@@ -64,8 +64,8 @@ Built as part of **Code Alpha Data Science Internship**.
 ### Clone Repository
 
 ```bash
-git clone https://github.com/bhanukumardev/CodeAlpha_CreditScoringModel.git
-cd CodeAlpha_CreditScoringModel
+git clone https://github.com/Aryan Guptakumardev/CreditScoringModel.git
+cd CreditScoringModel
 ```
 
 ### Install Dependencies
@@ -82,7 +82,7 @@ pip install -r requirements.txt
 ### Run Jupyter Notebook
 
 ```bash
-jupyter notebook CodeAlpha_CreditScoringModel.ipynb
+jupyter notebook CreditScoringModel.ipynb
 ```
 
 ## 🎯 Usage Example
@@ -118,11 +118,11 @@ print(f"Probability of Good Credit: {proba[0][1]:.2%}")
 ## 📁 Project Structure
 
 ```
-CodeAlpha_CreditScoringModel/
-├── CodeAlpha_CreditScoringModel.ipynb    # Main notebook
+CreditScoringModel/
+├── CreditScoringModel.ipynb    # Main notebook
 ├── german.data                           # UCI German Credit Dataset
 ├── credit_scoring_rf_model.pkl           # Trained Random Forest model
-├── CodeAlpha_CreditScoringModel.slides.html  # Presentation slides
+├── CreditScoringModel.slides.html  # Presentation slides
 ├── requirements.txt                      # Python dependencies
 └── README.md                             # Project documentation
 ```
@@ -158,10 +158,10 @@ CodeAlpha_CreditScoringModel/
 ## 📋 How to Run
 
 1. **Clone or Download** this repository
-2. **Open** `CodeAlpha_CreditScoringModel.ipynb` in Jupyter
+2. **Open** `CreditScoringModel.ipynb` in Jupyter
 3. **Run all cells** to reproduce the results
 4. **Explore** visualizations and model performance
-5. **View slides** in `CodeAlpha_CreditScoringModel.slides.html`
+5. **View slides** in `CreditScoringModel.slides.html`
 
 ## 📚 Project Overview
 
@@ -215,18 +215,18 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 👤 Author
 
-**Bhanu Kumar Dev**
+**Aryan Gupta**
 
 - 🎓 3rd Year CSSE @ KIIT University
-- 👨‍💻 Code Alpha Intern | Data Science & ML
-- 📧 Email: kumarbhanu818@gmail.com
-- 💼 LinkedIn: [bhanu-kumar-dev-97b820313](https://www.linkedin.com/in/bhanu-kumar-dev-97b820313)
-- 🐙 GitHub: [@bhanukumardev](https://github.com/bhanukumardev)
-- 🌐 Portfolio: [bhanukumardev.github.io/bhanu-portfolio](https://bhanukumardev.github.io/bhanu-portfolio/)
+- 👨‍💻 Intern | Data Science & ML
+- 📧 Email: kumarAryan Gupta818@gmail.com
+- 💼 LinkedIn: [Aryan Gupta-kumar-dev-97b820313](https://www.linkedin.com/in/Aryan Gupta-kumar-dev-97b820313)
+- 🐙 GitHub: [@Aryan Guptakumardev](https://github.com/Aryan Guptakumardev)
+- 🌐 Portfolio: [Aryan Guptakumardev.github.io/Aryan Gupta-portfolio](https://Aryan Guptakumardev.github.io/Aryan Gupta-portfolio/)
 
 ## 🌟 Acknowledgments
 
-- **Code Alpha** - For the internship opportunity
+-  - For the internship opportunity
 - **UCI Machine Learning Repository** - For the dataset
 - **Scikit-learn Community** - For excellent documentation
 
