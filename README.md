@@ -245,4 +245,4 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 *Empowering financial decisions with ML*
 
-**Made with ❤️ by Bhanu Kumar Dev | Code Alpha Internship**
+**Made with ❤️ by Aryan Gupta**
